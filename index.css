@@ -690,4 +690,48 @@ body:not(.user-is-tabbing) a:focus {
     font-size: var(--font-size-normal);
   }
 }
+/* --------------------------------------- */
+/* ----- GitHub Button for Projects ----- */
+/* --------------------------------------- */
+
+.btn--github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 3rem;
+  border: 1px solid var(--blue);
+  background: transparent;
+  transition: all 0.2s;
+}
+
+.btn--github .btn__icon {
+  height: 2rem;
+  width: 2rem;
+  filter: invert(100%); /* makes the GitHub logo white */
+  transition: transform 0.2s;
+}
+
+.btn--github:hover .btn__icon,
+.btn--github:focus .btn__icon {
+  transform: scale(1.2);
+}
+
+.btn--github::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  background: var(--blue);
+  height: 100%;
+  z-index: -1;
+  transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+.btn--github:hover::after,
+.btn--github:focus::after {
+  right: 0;
+}
+
 
