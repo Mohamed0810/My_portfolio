@@ -779,3 +779,8 @@ body:not(.user-is-tabbing) a:focus {
   font-size: var(--font-size-small);
   color: var(--white-1);
 }
+
+.service__box p {
+  font-size: var(--font-size-small);
+  color: var(--white-1);
+}
