@@ -689,8 +689,7 @@ body:not(.user-is-tabbing) a:focus {
   .education__year {
     font-size: var(--font-size-normal);
   }
-}
-/* --------------------------------------- */
+}/* --------------------------------------- */
 /* ----- GitHub Button for Projects ----- */
 /* --------------------------------------- */
 
@@ -733,5 +732,3 @@ body:not(.user-is-tabbing) a:focus {
 .btn--github:focus::after {
   right: 0;
 }
-
-
