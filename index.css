@@ -740,3 +740,42 @@ body:not(.user-is-tabbing) a:focus {
 .btn--github:focus::after {
   right: 0;
 }
+/* ----- Services ----- */
+/* --------------------------------------- */
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gutter-medium);
+}
+
+.service__box {
+  background: rgba(20, 33, 61, 0.15);
+  padding: var(--gutter-normal);
+  border: 1px solid var(--blue);
+  border-radius: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.service__box:hover {
+  transform: translateY(-10px);
+  background: rgba(20, 33, 61, 0.3);
+}
+
+.service__icon {
+  height: 6rem;
+  margin-bottom: var(--gutter-small);
+  filter: invert(100%) grayscale(100%);
+}
+
+.service__box h3 {
+  margin-bottom: var(--gutter-small);
+  font-size: var(--font-size-medium);
+  color: var(--white);
+}
+
+.service__box p {
+  font-size: var(--font-size-small);
+  color: var(--white-1);
+}
